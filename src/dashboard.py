@@ -4,6 +4,8 @@ import paho.mqtt.client as mqtt
 import threading
 from datetime import datetime
 
+
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'sisri2026'
 socketio = SocketIO(app, cors_allowed_origins="*")
@@ -171,3 +173,9 @@ if __name__ == "__main__":
     t.start()
     print("\n Dashboard SISRI a correr em http://localhost:5000\n")
     socketio.run(app, host="0.0.0.0", port=5000, debug=False, allow_unsafe_werkzeug=True)
+
+
+
+
+
+    
